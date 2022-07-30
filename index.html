@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <!-- Rating state start -->
+  
+    <section id="rating-state" class="container">
+  
+      <div class="circle"><img src="./images/icon-star.svg" alt="star icon" id="star-icon"></div>
+      <div class="captions">
+        <h1 class="primary-capt">How did we do?</h1>
+        <p class="caption">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+  
+      <div id="radio-button" role="radiogroup">
+        <span class="radio-button circle" aria-checked="false" data-value="1" aria-labelledby="1">
+          <label id="1">1</label>
+        </span>
+  
+        <span class="radio-button circle" aria-checked="false" data-value="2" aria-labelledby="2">
+          <label id="2">2</label>
+        </span>
+  
+        <span class="radio-button circle" aria-checked="false" data-value="3" aria-labelledby="3">
+          <label id="3">3</label>
+        </span>
+  
+        <span class="radio-button circle" aria-checked="false" data-value="4" aria-labelledby="4">
+          <label id="4">4</label>
+        </span>
+  
+        <span class="radio-button circle" aria-checked="false" data-value="5" aria-labelledby="5">
+          <label id="5">5</label>
+        </span>
+      </div>
+
+      <button id="submit" type="submit" onsubmit="return false">SUBMIT</button>
+    </section>
+  
+    <!-- Rating state end -->
+  
+    <!-- Thank you state start -->
+  
+    <section id="thankyou-state" class="container centered">
+      <img src="./images/illustration-thank-you.svg" alt="thank you illustration" id="thank-you" class="centered">
+      <span class="rating-cont">You selected <span id="rating"></span> out of 5</span>
+      <div class="captions">
+        <h1 class="primary-capt">Thank you!</h1>
+        <p class="caption">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
